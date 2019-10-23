@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+  <meta charset="utf-8" />
+  <script type="text/javascript">
+  function patata(rata) {
+    alert(rata);
+  }
+  </script>
+  <link href="style4.css" rel="stylesheet" type="text/css">
+</HEAD>
+<BODY onload="destino()">
+  <!--ETIQUETA DE MAPA -->
+  <map  name="numero1">
+    <area shape="rect" coords="860,580,980,800" onclick="patata(1)" >
+    <area shape="rect" coords="980,580,1140,800" onclick="patata(2)" >
+    <area shape="rect" coords="990,970,1140,1155" onclick="patata(3)" >
+    <area shape="rect" coords="980,1255,1140,1470" onclick="patata(4)" >
+    <area shape="rect" coords="980,1600,1140,1800" onclick="patata(5)" >
+    <area shape="rect" coords="860,1600,980,1800" onclick="patata(6)" >
+    <area shape="rect" coords="980,1880,1140,2080" onclick="patata(7)" >
+    <area shape="rect" coords="350,970,520,1215" onclick="patata(8)" >
+    <area shape="rect" coords="350,1310,520,1560" onclick="patata(9)" >
+    <area shape="rect" coords="350,2310,570,2435" onclick="patata(10)" >
+    <area shape="rect" coords="330,2500,570,2640" onclick="patata(11)" >
+    <area shape="rect" coords="650,2520,855,2640" onclick="patata(12)" >
+
+
+  </map >
+
+  <!--ETIQUETA DE MAPA DE DIJKSTRA E IMAGEN TRASPARENTE -->
+  <div id= "map">
+      <img id="imagen1" src="Segundo Piso de diseno.png">
+      <canvas id='myCanvas' height="2620px" width="1500"></canvas>
+    </div>
+  <img id="imagen2" src="imagen_transparente.png" usemap="#numero1">
+ <button type="submit" onclick="window.location.href='../mapas html de generales/mapa_general_colegio.html'" class="boton_para_volver_al_index">Mapa General</button>
+
+
+
+
+  <!--EL PRIMER POPUP-->
+
+  <div class="popup-overlay">
+    <!--Creates the popup content-->
+     <div class="popup-content">
+        <h2>Punto Final</h2>
+        <select id="inicio" class="inicio">
+          <option value="0">Parte superior escaleras</option>
+          <option value="7">Manibus</option>
+          <option value="8">Guias Y Scouts de Costa Rica</option>
+          <option value="8">Clean Wave</option>
+          <option value="8">Fundacion Hedwing y Robert Samuel</option>
+          <option value="9">Red Contra La Violencia hacia las mujeres e intrafamiliar</option>
+          <option value="10">Escuela Neuro Psiquiatrica Infantil</option>
+          <option value="12">Fundacion Construyendo Sonrisas</option>
+          <option value="12">Psicoe</option>
+          <option value="12">Asociacion Pro Desarrollo Saludables de la Adolescencia</option>
+          <option value="13">Abrazos Para El AlMA</option>
+          <option value="13">Fundacion Crema</option>
+          <option value="13">Fundacion Educando Niños</option>>
+          <option value="15">Warholl</option>
+          <option value="16">Salida Trasera</option>
+          <option value="18">Labradores S.O.S</option>
+
+        </select>
+        <br>
+        <br>
+             <!--popup's close button-->
+
+       <h2>Punto Inicial</h2>
+       <select id="final" class="final">
+         <option value="0">Parte superior escaleras</option>
+         <option value="7">Manibus</option>
+         <option value="8">Guias Y Scouts de Costa Rica</option>
+         <option value="8">Clean Wave</option>
+         <option value="8">Fundacion Hedwing y Robert Samuel</option>
+         <option value="9">Red Contra La Violencia hacia las mujeres e intrafamiliar</option>
+         <option value="10">Escuela Neuro Psiquiatrica Infantil</option>
+         <option value="12">Fundacion Construyendo Sonrisas</option>
+         <option value="12">Psicoe</option>
+         <option value="12">Asociacion Pro Desarrollo Saludables de la Adolescencia</option>
+         <option value="13">Abrazos Para El AlMA</option>
+         <option value="13">Fundacion Crema</option>
+         <option value="13">Fundacion Educando Niños</option>>
+         <option value="15">Es Real</option>
+         <option value="16">Salida Trasera</option>
+         <option value="18">Labradores S.O.S</option>
+       </select>
+       <br>
+       <br>
+       <!--popup's close button-->
+        <button class="close">Close</button>
+      </div>
+  </div>
+
+  <!--EL TERCER POPUP-->
+
+
+  <!--Content shown when popup is not displayed-->
+
+  <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script  src="./funcion_popup.js"></script>
+
+
+
+
+  <ul id="menu">
+    <a class="menu-button icon-plus" href="#menu" title="Show navigation"><span class="fas fa-share-alt"></span></a>
+    <a class="menu-button icon-minus" href="#0" title="Hide navigation"><span class="fas fa-share-alt"></span></a>
+    <li class="menu-item">
+        <a href="#menu">
+
+              <i onclick="popupprimero()"  class="fas fa-map-marker-alt" style="font-size: 37px;"></i>
+        </a>
+
+    </li>
+    <li class="menu-item">
+        <a href="#menu">
+          <i class="far fa-caret-square-down" onclick="window.location.href='../mapas html de primer piso/mapa_diseño_primer_piso.html'"  style="font-size: 37px;"></i>
+        </a>
+    </li>
+    <li class="menu-item">
+        <a href="#menu">
+          <i  onclick="destino()" class="far fa-check-circle" style="font-size: 37px;"></i>
+        </a>
+    </li>
+  </ul>
+  <!--ETIQUETA DE LINKS -->
+    </select>
+    <link rel="stylesheet" href="./style_popup.css">
+  <script  src="./funcion_popup.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<!--ETIQUETA DE LINKS -->
+  </select>
+    <script src="mapa_segundo_piso_diseño/Grafo.js"></script>
+    <script src="mapa_segundo_piso_diseño/Dijkstra.js"></script>
+    <script src="mapa_segundo_piso_diseño/Visual.js"></script>
+</BODY>
+</HTML>

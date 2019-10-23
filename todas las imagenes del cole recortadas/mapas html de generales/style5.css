@@ -1,0 +1,23 @@
+img{
+  position: absolute;
+
+}
+canvas{
+  position: absolute;
+}
+
+#imagen2{
+  width: 3500px;
+  height: 3000px;
+  z-index: 24;
+}
+#imagen1{
+  height: 3000px;
+  position: absolute;
+  margin-left: -1390px;
+}
+#scroll{
+  height: 1000px;
+  width: 100%;
+  overflow-y: scroll;
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+  <meta charset="utf-8" />
+  <script type="text/javascript">
+    function patata(rata) {
+      alert(rata);
+    }
+  </script>
+  <link href="style3.css" rel="stylesheet" type="text/css">
+</HEAD>
+<BODY onload="destino()">
+  <!--ETIQUETA DE MAPA -->
+  <map  name="numero1">
+    <area shape="rect" coords="320,430,500,550" onclick="patata(1)" >
+    <area shape="rect" coords="500,430,660,550" onclick="patata(2)" >
+    <area shape="rect" coords="660,430,820,550" onclick="patata(3)" >
+    <area shape="rect" coords="320,570,430,770" onclick="patata(4)" >
+    <area shape="rect" coords="320,800,495,890" onclick="patata(5)" >
+    <area shape="rect" coords="500,800,650,890" onclick="patata(6)" >
+    <area shape="rect" coords="660,800,820,890" onclick="patata(7)" >
+    <area shape="rect" coords="830,520,950,620" onclick="patata(8)" >
+    <area shape="rect" coords="950,520,1090,620" onclick="patata(9)" >
+    <area shape="rect" coords="1140,460,1240,590" onclick="patata(10)" >
+    <area shape="rect" coords="1140,610,1240,740" onclick="patata(11)" >
+    <area shape="rect" coords="1140,760,1240,890" onclick="patata(12)" >
+    <area shape="rect" coords="1130,905,1235,1060" onclick="patata(13)" >
+    <area shape="rect" coords="1130,1080,1235,1240" onclick="patata(14)" >
+    <area shape="rect" coords="1130,1250,1235,1390" onclick="patata(15)" >
+    <area shape="rect" coords="1130,1410,1235,1560" onclick="patata(16)" >
+    <area shape="rect" coords="1130,1575,1235,1740" onclick="patata(17)" >
+    <area shape="rect" coords="320,900,495,1000" onclick="patata(18)" >
+    <area shape="rect" coords="500,900,650,1000" onclick="patata(19)" >
+    <area shape="rect" coords="660,900,820,1000" onclick="patata(20)" >
+    <area shape="rect" coords="340,1170,440,1365" onclick="patata(21)" >
+    <area shape="rect" coords="340,1380,440,1560" onclick="patata(22)" >
+    <area shape="rect" coords="340,1570,440,1730" onclick="patata(23)" >
+    <area shape="rect" coords="710,1170,810,1365" onclick="patata(24)" >
+    <area shape="rect" coords="710,1380,810,1560" onclick="patata(25)" >
+    <area shape="rect" coords="300,2240,430,2350" onclick="patata(26)" >
+    <area shape="rect" coords="440,2220,560,2330" onclick="patata(27)" >
+    <area shape="rect" coords="540,2540,690,2640" onclick="patata(28)" >
+
+  </map >
+
+  <!--ETIQUETA DE MAPA DE DIJKSTRA E IMAGEN TRASPARENTE -->
+  <div id= "map">
+      <img id="imagen1" src="PRIMER PISO DE ARQUITECTONICO.png">
+      <canvas id='myCanvas' height="2700px" width="2000"></canvas>
+    </div>
+  <img id="imagen2" src="imagen_transparente.png" usemap="#numero1">
+  <button type="submit" onclick="window.location.href='../mapas html de generales/mapa_general_colegio.html'" class="boton_para_volver_al_index">Mapa General</button>
+
+
+<!--ETIQUETA DE SELECT -->
+<!--EL PRIMER POPUP-->
+
+<div class="popup-overlay">
+  <!--Creates the popup content-->
+   <div class="popup-content">
+      <h2>Punto Final</h2>
+      <select id="inicio" class="inicio">
+        <option value="0">Entrada Arqui</option>
+
+        <option value="2">DAT</option>
+        <option value="2">MAF</option>
+
+        <option value="3">Colvest</option>
+
+        <option value="5">Baños</option>
+
+        <option value="9">Valdivia</option>
+         <option value="11">PREM</option>
+         <option value="11">DMR</option>
+
+         <option value="12">Novus Via</option>
+         <option value="12">MCR</option>
+
+         <option value="13">Teca</option>
+         <option value="13">PC Elements</option>
+         <option value="13">Proyecto Mariposa</option>
+
+         <option value="19">Energetic Concret</option>
+         <option value="19">Saverkler</option>
+
+        <option value="16">Bambuco</option>
+        <option value="16">ECOB</option>
+
+        <option value="17">Smarq</option>
+
+        <option value="18">Desh</option>
+        <option value="18">911 MA</option>
+
+
+        <option value="20">Otium</option>
+        <option value="20">Vallzn</option>
+
+        <option value="21">Homeless</option>
+        <option value="21">IPI</option>
+        <option value="21">Remove and Put</option>
+
+        <option value="23">FPS</option>
+        <option value="24">CC Device</option>
+        <option value="25">Pure Solution</option>
+        <option value="25">Filterwat</option>
+        <option value="26">Water Drop</option>
+
+      </select>
+      <br>
+      <br>
+           <!--popup's close button-->
+
+     <h2>Punto Inicial</h2>
+     <select id="final" class="final">
+       <option value="0">Entrada Arqui</option>
+
+       <option value="2">DAT</option>
+       <option value="2">MAF</option>
+
+       <option value="3">Colvest</option>
+
+       <option value="5">Baños</option>
+
+
+        <option value="11">PREM</option>
+        <option value="11">DMR</option>
+
+        <option value="12">Novus Via</option>
+        <option value="12">MCR</option>
+
+        <option value="13">Teca</option>
+        <option value="13">PC Elements</option>
+        <option value="13">Proyecto Mariposa</option>
+
+       <option value="16">Bambuco</option>
+       <option value="16">ECOB</option>
+
+       <option value="17">Smarq</option>
+
+       <option value="18">Desh</option>
+       <option value="18">911 MA</option>
+
+
+       <option value="20">Otium</option>
+       <option value="20">Vallzn</option>
+
+       <option value="21">Homeless</option>
+       <option value="21">IPI</option>
+       <option value="21">Remove and Put</option>
+
+       <option value="23">FPS</option>
+       <option value="24">CC Device</option>
+       <option value="25">Pure Solution</option>
+       <option value="25">Filterwat</option>
+       <option value="26">Water Drop</option>
+
+
+     </select>
+     <br>
+     <br>
+     <!--popup's close button-->
+      <button class="close">Close</button>
+    </div>
+</div>
+
+<!--EL TERCER POPUP-->
+
+
+<!--Content shown when popup is not displayed-->
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script  src="./funcion_popup.js"></script>
+
+
+
+
+<ul id="menu">
+  <a class="menu-button icon-plus" href="#menu" title="Show navigation"><span class="fas fa-share-alt"></span></a>
+  <a class="menu-button icon-minus" href="#0" title="Hide navigation"><span class="fas fa-share-alt"></span></a>
+  <li class="menu-item">
+      <a href="#menu">
+
+            <i onclick="popupprimero()"  class="fas fa-map-marker-alt" style="font-size: 37px;"></i>
+      </a>
+
+  </li>
+  <li class="menu-item">
+      <a href="#menu">
+        <i onclick="window.location.href='../mapa html de segundo piso/mapa_arqui_segundo_piso.html'" class="far fa-caret-square-up" style="font-size: 37px;"></i>
+      </a>
+  </li>
+  <li class="menu-item">
+      <a href="#menu">
+        <i onclick="destino()" class="far fa-check-square" style="font-size: 37px;"></i>
+      </a>
+  </li>
+</ul>
+<!--ETIQUETA DE LINKS -->
+  </select>
+  <link rel="stylesheet" href="./style_popup.css">
+<script  src="./funcion_popup.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<!--ETIQUETA DE LINKS -->
+  </select>
+    <script src="mapa_primer_piso_arqui/Grafo.js"></script>
+    <script src="mapa_primer_piso_arqui/Dijkstra.js"></script>
+    <script src="mapa_primer_piso_arqui/Visual.js"></script>
+</BODY>
+</HTML>

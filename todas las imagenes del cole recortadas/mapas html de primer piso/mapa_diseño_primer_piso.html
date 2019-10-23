@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+  <meta charset="utf-8" />
+  <script type="text/javascript">
+  function patata(rata) {
+    alert(rata);
+  }
+  </script>
+  <link href="style1.css" rel="stylesheet" type="text/css">
+</HEAD>
+<BODY onload="destino()">
+  <!--ETIQUETA DE MAPA -->
+  <map  name="numero1">
+    <area shape="rect" coords="340,1250,785,1400" onclick="patata(1)" >
+    <area shape="rect" coords="340,1600,785,1750" onclick="patata(2)" >
+    <area shape="rect" coords="340,2370,785,2510" onclick="patata(3)" >
+    <area shape="rect" coords="340,1400,480,1600" onclick="patata(4)" >
+    <area shape="rect" coords="340,1600,480,2060" onclick="patata(5)" >
+    <area shape="rect" coords="340,2060,480,2370" onclick="patata(6)" >
+    <area shape="rect" coords="950,1250,1150,1400" onclick="patata(7)" >
+    <area shape="rect" coords="950,2130,1150,2360" onclick="patata(8)" >
+
+  </map >
+
+  <!--ETIQUETA DE MAPA DE DIJKSTRA E IMAGEN TRASPARENTE -->
+  <div id= "map">
+      <img id="imagen1" src="PRIMER PISO DE DISENO.png">
+      <canvas id='myCanvas' height="2500px" width="1500"></canvas>
+    </div>
+  <img id="imagen2" src="imagen_transparente.png" usemap="#numero1">
+
+
+  <button type="submit" onclick="window.location.href='../mapas html de generales/mapa_general_colegio.html'" class="boton_para_volver_al_index">Mapa General</button>
+
+
+<!--ETIQUETA DE SELECT -->
+
+<!--EL PRIMER POPUP-->
+
+<div class="popup-overlay">
+  <!--Creates the popup content-->
+   <div class="popup-content">
+      <h2>Punto Final</h2>
+      <select id="inicio" class="inicio">
+        <option value="0">Entrada Diseño</option>
+
+        <option value="2">Exhibicion</option>
+        <option value="3">Escaleras</option>
+
+        <option value="5">Baños</option>
+
+        <option value="10">Salida 1</option>
+
+        <option value="13">Tinturea</option>
+        <option value="13">Golden Sweat</option>
+
+        <option value="14">Codigo Iguales</option>
+        <option value="14">Glowbe</option>
+
+        <option value="15">Elaza</option>
+        <option value="15">Puptrip</option>
+
+        <option value="16">Cine</option>
+
+        <option value="18">Aula</option>
+        <option value="19">Vogans</option>
+
+        <option value="21">Edafos</option>
+
+
+      </select>
+      <br>
+      <br>
+           <!--popup's close button-->
+
+     <h2>Punto Inicial</h2>
+     <select id="final" class="final">
+       <option value="0">Entrada Diseño</option>
+       <option value="1">Oficinas</option>
+       <option value="2">Exhibicion</option>
+       <option value="3">Escaleras</option>
+       <option value="4">Pasillo</option>
+       <option value="5">Baños</option>
+       <option value="6">Pasillo</option>
+       <option value="7">Pasillo</option>
+       <option value="8">Pasillo</option>
+       <option value="9">Pasillo</option>
+       <option value="10">Salida 1</option>
+       <option value="11">Pasillo</option>
+       <option value="12">Pasillo</option>
+       <option value="13">Tinturea</option>
+       <option value="13">Golden Sweat</option>
+
+       <option value="14">Codigo Iguales</option>
+       <option value="14">15</option>
+
+       <option value="15">Elaza</option>
+       <option value="15">Puptrip</option>
+
+       <option value="16">Cine</option>
+       <option value="17">Pasillo</option>
+       <option value="18">Aula</option>
+       <option value="19">Vogans</option>
+       <option value="20">Pasillo</option>
+       <option value="21">Edafos</option>
+     </select>
+     <br>
+     <br>
+     <!--popup's close button-->
+      <button class="close">Close</button>
+    </div>
+</div>
+<!--EL TERCER POPUP-->
+
+
+<!--Content shown when popup is not displayed-->
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script  src="./funcion_popup.js"></script>
+
+
+
+
+<ul id="menu">
+  <a class="menu-button icon-plus" href="#menu" title="Show navigation"><span class="fas fa-share-alt"></span></a>
+  <a class="menu-button icon-minus" href="#0" title="Hide navigation"><span class="fas fa-share-alt"></span></a>
+  <li class="menu-item">
+      <a href="#menu">
+
+            <i onclick="popupprimero()"  class="fas fa-map-marker-alt" style="font-size: 37px;"></i>
+      </a>
+
+  </li>
+  <li class="menu-item">
+      <a href="#menu">
+        <i onclick="window.location.href='../mapa html de segundo piso/mapa_diseño_segundo_piso.html'" class="far fa-caret-square-up" style="font-size: 37px;"></i>
+      </a>
+  </li>
+  <li class="menu-item">
+      <a href="#menu">
+        <i onclick="destino()" class="far fa-check-square" style="font-size: 37px;"></i>
+      </a>
+  </li>
+</ul>
+<!--ETIQUETA DE LINKS -->
+  </select>
+  <link rel="stylesheet" href="./style_popup.css">
+<script  src="./funcion_popup.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<!--ETIQUETA DE LINKS -->
+  </select>
+    <script src="mapa_primer_piso_diseño/Grafo.js"></script>
+    <script src="mapa_primer_piso_diseño/Dijkstra.js"></script>
+    <script src="mapa_primer_piso_diseño/Visual.js"></script>
+</BODY>
+</HTML>

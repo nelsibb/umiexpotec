@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>UMi expotec 2019</title>
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/ionicons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="datatables.min.css">
+
+  </head>
+  <body class="color-theme-pink">
+    <!-- App root element -->
+    <div id="app">
+      <div class="views tabs">
+        <!-- Main view -->
+        <div id="view-today" class="view view-main tab tab-active">
+          <div data-name="home" class="page no-navbar">
+            <!-- Scrollable page content -->
+            <div class="page-content ptr-content infinite-scroll-content" data-infinite-distance="70">
+              <div class="ptr-preloader">
+                <div class="preloader"></div>
+                <div class="ptr-arrow"></div>
+              </div>
+              <div class="block" id="today-content">
+                <div class="title-container">
+                  <span class="title-date">Miércoles 15 de octubre</span>
+                  <h1>NOTICIAS</h1>
+                </div>
+                <a href="/single/">
+                  <div class="card">
+                    <img class="card-image" src="img/thumb-1.jpg" alt="">
+                    <div class="card-infos">
+                      <div class="chip color-pink"><i class="icon ion-ios-flame"></i>NOVEDAD</div>
+                      <h2 class="card-title">¡PARTICIPA Y GANA ENTRADAS PARA EL EVENTO DE INAUGURACIÓN!</h2>
+                      <div class="card-bottom">
+                        <div class="card-author">
+                          <img class="card-author-image" src="img/authors/author-7.jpg" alt="">
+                          <div>CEDES Don Bosco</div>
+                        </div>
+                        <div class="card-comments"><i class="icon ion-ios-text"></i>68</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="/single/">
+                  <div class="card card-style-2">
+                    <div class="card-image-container"><img class="card-image" src="img/thumb-2.jpg" alt=""></div>
+                    <div class="card-infos">
+                      <div class="card-category">Expotec 2019</div>
+                      <h2 class="card-title">24-27 de octubre</h2>
+                      <p class="card-description">Visita los diferentes proyectos en la EXPOTEC 2019</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="/single/">
+                  <div class="card">
+                    <img class="card-image" src="img/thumb-3.jpg" alt="">
+                    <div class="card-infos">
+                      <h2 class="card-title">Agradecemos la visita de Jessica Soto</h2>
+                      <div class="card-bottom">
+                        <div class="card-author">
+                          <img class="card-author-image" src="" alt="">
+                          <div>Representante del Banco Nacional quien hoy brindó la charla: ¿Cómo vender mi proyecto?</div>
+                        </div>
+                        <div class="card-comments"><i class="icon ion-ios-text"></i>22</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="title-container">
+                  <span class="title-date">Jueves 17 de octubre</span>
+                  <h1>Más noticias</h1>
+                </div>
+                <div class="two-columns-cards">
+                  <a href="/single/">
+                    <div class="card">
+                      <img class="card-image" src="img/thumb-4.jpg" alt="">
+                      <div class="card-infos">
+                        <h2 class="card-title">¡Felicitaciones a la Selección C de la institución!</h2>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="/single/">
+                    <div class="card">
+                      <img class="card-image" src="img/thumb-5.jpg" alt="">
+                      <div class="card-infos">
+                        <h2 class="card-title">Donación de tapas plásticas a la empresa DONTAPA.</h2>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="/single/">
+                    <div class="card">
+                      <img class="card-image" src="img/thumb-6.jpg" alt="">
+                      <div class="card-infos">
+                        <h2 class="card-title">Bendición de animales en el Centro Infantil Pasitos Pequeños</h2>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="/single/">
+                    <div class="card">
+                      <img class="card-image" src="img/thumb-7.jpg" alt="">
+                      <div class="card-infos">
+                        <h2 class="card-title">Agradecemos al padre Timothy su visita</h2>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="/single/">
+                    <div class="card">
+                      <img class="card-image" src="img/thumb-8.jpg" alt="">
+                      <div class="card-infos">
+                        <h2 class="card-title">"Me siento en casa. porque todos somos salesianos"</h2>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="/single/">
+                    <div class="card">
+                      <img class="card-image" src="img/thumb-9.jpg" alt="">
+                      <div class="card-infos">
+                        <h2 class="card-title">Agradecemos la visita del Padre Vittorio Castagna</h2>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="title-container">
+                  <span class="title-date">Meses anteriores</span>
+                  <h1>Otras</h1>
+                </div>
+                <a href="/single/">
+                  <div class="card medium">
+                    <img class="card-image" src="img/thumb-10.jpg" alt="">
+                    <div class="card-infos">
+                      <div class="card-date"><i class="icon ion-md-time"></i>28 de septiembre</div>
+                      <h2 class="card-title">Ochenta jóvenes confirmaron su fe el día de ayer en la Iglesia María Auxiliadora.</h2>
+                    </div>
+                  </div>
+                </a>
+                <ul class="list media-list post-list" id="infinite-content">
+                  <li>
+                    <a href="/single/">
+                      <div class="item-content">
+                        <div class="item-media"><img src="img/thumb-11.jpg" alt=""></div>
+                        <div class="item-inner">
+                          <div class="item-subtitle">Musica</div>
+                          <div class="item-title">La Banda se presentara en el Festival de la Luz</div>
+
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/single/">
+                      <div class="item-content">
+                        <div class="item-media"><img src="img/thumb-12.jpg" alt=""></div>
+                        <div class="item-inner">
+                          <div class="item-subtitle">Premiaciones</div>
+                          <div class="item-title">Estudiantes de la escuela reciben premio por sus proyectos en importante feria a nivel regional</div>
+
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/single/">
+                      <div class="item-content">
+                        <div class="item-media"><img src="img/thumb-13.jpg" alt=""></div>
+                        <div class="item-inner">
+                          <div class="item-subtitle">Programa Lego</div>
+                          <div class="item-title">Estudiantes de primaria realizan curso Lego, el cual busca mejorar sus habiliades motoras</div>
+
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Categories View -->
+        <div id="view-categories" class="view tab">
+          <div data-name="categories" class="page no-navbar">
+            <!-- Scrollable page content -->
+            <div class="page-content">
+              <div class="block">
+                <div class="title-container">
+                  <h1>Especialidades</h1>
+                </div>
+                <div class="categories-container">
+                  <a href="/category/">
+                    <div class="category card" style="background-image: url('img/categories/sports.jpg'); box-shadow: 0px 15px 20px -10px rgba(252, 186, 47, 0.5);">
+
+                    </div>
+                  </a>
+                  <a href="/category/">
+                    <div class="category card" style="background-image: url('img/categories/travel.jpg'); box-shadow: 0px 15px 20px -10px rgba(128, 213, 250, 0.5);">
+
+                    </div>
+                  </a>
+                  <a href="/category/">
+                    <div class="category card" style="background-image: url('img/categories/music.jpg'); box-shadow: 0px 15px 20px -10px rgba(231, 0, 70, 0.5);">
+
+                    </div>
+                  </a>
+                  <a href="/category/">
+                    <div class="category card" style="background-image: url('img/categories/gaming.jpg'); box-shadow: 0px 15px 20px -10px rgba(37, 57, 155, 0.5);">
+
+                    </div>
+                  </a>
+                  <a href="/category/">
+                    <div class="category card" style="background-image: url('img/categories/photography.jpg'); box-shadow: 0px 15px 20px -10px rgba(37, 227, 154, 0.5);">
+
+                    </div>
+                  </a>
+                  <a href="/category/">
+                    <div class="category card" style="background-image: url('img/categories/food.jpg'); box-shadow: 0px 15px 20px -10px rgba(255, 128, 169, 0.5);">
+
+                    </div>
+                  </a>
+                </div>
+                <div class="title-container">
+                  <span class="title-date">Más reciente</span>
+                  <div class="title-with-link">
+                    <h1>Sobre CEDES</h1>
+                    <a href="/category/" class="col button button-small button-round button-fill">Ver todo</a>
+                  </div>
+                </div>
+                <div class="two-columns-cards">
+                  <a href="/single/">
+                    <div class="card">
+                      <img class="card-image" src="img/thumb-4.jpg" alt="">
+                      <div class="card-infos">
+                        <h2 class="card-title"></h2>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="/single/">
+                    <div class="card">
+                      <img class="card-image" src="img/thumb-8.jpg" alt="">
+                      <div class="card-infos">
+                        <h2 class="card-title"></h2>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="/single/">
+                    <div class="card">
+                      <img class="card-image" src="img/thumb-1.jpg" alt="">
+                      <div class="card-infos">
+                        <h2 class="card-title"></h2>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="/single/">
+                    <div class="card">
+                      <img class="card-image" src="img/thumb-11.jpg" alt="">
+                      <div class="card-infos">
+                        <h2 class="card-title"></h2>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="title-container">
+                  <span class="title-date">En los últimos meses</span>
+                  <div class="title-with-link">
+                    <h1>Novedades</h1>
+                    <a href="/category/" class="col button button-small button-round button-fill">Ver todo</a>
+                  </div>
+                </div>
+                <div class="two-columns-cards">
+                  <a href="/single/">
+                    <div class="card">
+                      <img class="card-image" src="img/thumb-9.jpg" alt="">
+                      <div class="card-infos">
+                        <h2 class="card-title"></h2>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="/single/">
+                    <div class="card">
+                      <img class="card-image" src="img/thumb-6.jpg" alt="">
+                      <div class="card-infos">
+                        <h2 class="card-title"></h2>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="/single/">
+                    <div class="card">
+                      <img class="card-image" src="img/thumb-7.jpg" alt="">
+                      <div class="card-infos">
+                        <h2 class="card-title"></h2>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="/single/">
+                    <div class="card">
+                      <img class="card-image" src="img/thumb-3.jpg" alt="">
+                      <div class="card-infos">
+                        <h2 class="card-title"></h2>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Discover View -->
+        <div id="view-discover" class="view tab">
+          <div data-name="discover" class="page no-navbar">
+            <!-- Scrollable page content -->
+            <div class="page-content">
+              <div class="discover-gradient">
+                <svg viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="white" points="0,100 100,0 100,100"/></svg>
+              </div>
+              <div class="block">
+                <div class="title-container white">
+                  <span class="title-date">This Week</span>
+                  <div class="title-with-link">
+                    <h1>Discover</h1>
+                    <i class="icon ion-ios-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div id="discover-swiper" class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" data-href="/single/">
+                      <div class="card">
+                        <img class="card-image" src="img/thumb-36.jpg" alt="">
+                        <div class="card-infos">
+                          <h2 class="card-title">NASA Chooses Its Next Chief Scientist</h2>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" data-href="/single/">
+                      <div class="card">
+                        <img class="card-image" src="img/thumb-19.jpg" alt="">
+                        <div class="card-infos">
+                          <h2 class="card-title">Jeffrey Campbell's New Shoes Models</h2>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" data-href="/single/">
+                      <div class="card">
+                        <img class="card-image" src="img/thumb-41.jpg" alt="">
+                        <div class="card-infos">
+                          <h2 class="card-title">The Best Models of Sunglasses to Go out This Summer</h2>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" data-href="/single/">
+                      <div class="card">
+                        <img class="card-image" src="img/thumb-37.jpg" alt="">
+                        <div class="card-infos">
+                          <h2 class="card-title">Soprano Announces His New Album</h2>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" data-href="/single/">
+                      <div class="card">
+                        <img class="card-image" src="img/thumb-40.jpg" alt="">
+                        <div class="card-infos">
+                          <h2 class="card-title">Will Conor Return to the UFC Octagon?</h2>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="block">
+                <div class="title-medium-container title-with-link">
+                  <h2>Popular Authors</h2>
+                  <a href="/author-list/" class="col button button-small button-round button-fill">See All</a>
+                </div>
+                <ul class="popular-authors">
+                  <li>
+                    <a href="/author/">
+                      <div class="author-image"><img src="img/authors/author-3.jpg" alt=""></div>
+                      <div class="author-infos">
+                        <div class="author-name">Jess Roxana</div>
+                        <div class="author-description">NBA & NFL Journalist</div>
+                      </div>
+                      <div class="author-star"><i class="icon ion-ios-star"></i></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/author/">
+                      <div class="author-image"><img src="img/authors/author-2.jpg" alt=""></div>
+                      <div class="author-infos">
+                        <div class="author-name">Zorka Ivka</div>
+                        <div class="author-description">Graphist and Webdesigner</div>
+                      </div>
+                      <div class="author-star"><i class="icon ion-ios-star"></i></div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/author/">
+                      <div class="author-image"><img src="img/authors/author-1.jpg" alt=""></div>
+                      <div class="author-infos">
+                        <div class="author-name">Camille Aline</div>
+                        <div class="author-description">Fashion & Mode Worker</div>
+                      </div>
+                      <div class="author-star"><i class="icon ion-ios-star"></i></div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="title-medium-container">
+                  <h2>The Fashion Week</h2>
+                </div>
+              </div>
+              <div id="discover-swiper2" class="swiper-container medium-card-slider style-2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" data-href="/single/">
+                      <div class="card">
+                        <img class="card-image" src="img/thumb-20.jpg" alt="">
+                      </div>
+                      <div class="card-infos">
+                        <h2 class="card-title">Best Clothes Showed on Fashion Week</h2>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" data-href="/single/">
+                      <div class="card">
+                        <img class="card-image" src="img/thumb-21.jpg" alt="">
+                      </div>
+                      <div class="card-infos">
+                        <h2 class="card-title">What Future for Milan Fashion Week?</h2>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" data-href="/single/">
+                      <div class="card">
+                        <img class="card-image" src="img/thumb-22.jpg" alt="">
+                      </div>
+                      <div class="card-infos">
+                        <h2 class="card-title">10 Unusual Jewels Spotted at Fashion Week</h2>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" data-href="/single/">
+                      <div class="card">
+                        <img class="card-image" src="img/thumb-23.jpg" alt="">
+                      </div>
+                      <div class="card-infos">
+                        <h2 class="card-title">Monica Bellucci Will Be Present This Year</h2>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" data-href="/single/">
+                      <div class="card">
+                        <img class="card-image" src="img/thumb-24.jpg" alt="">
+                      </div>
+                      <div class="card-infos">
+                        <h2 class="card-title">Milan Fashion Week: Giorgio Armani Show</h2>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="block">
+                <div class="title-medium-container title-with-link">
+                  <h2>In Lifestyle</h2>
+                  <a href="/category/" class="col button button-small button-round button-fill">See All</a>
+                </div>
+                <ul class="list media-list post-list">
+                  <li>
+                    <a href="/single/">
+                      <div class="item-content">
+                        <div class="item-media"><img src="img/thumb-25.jpg" alt=""></div>
+                        <div class="item-inner">
+                          <div class="item-subtitle">Fashion</div>
+                          <div class="item-title">The Best Diet for a Flatter Belly</div>
+                          <div class="item-subtitle bottom-subtitle"><i class="icon ion-md-time"></i>2 hours ago</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/single/">
+                      <div class="item-content">
+                        <div class="item-media"><img src="img/thumb-26.jpg" alt=""></div>
+                        <div class="item-inner">
+                          <div class="item-subtitle">Science</div>
+                          <div class="item-title">Here Are the Five Best Fruits of the Summer</div>
+                          <div class="item-subtitle bottom-subtitle"><i class="icon ion-md-time"></i>3 days ago</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/single/">
+                      <div class="item-content">
+                        <div class="item-media"><img src="img/thumb-27.jpg" alt=""></div>
+                        <div class="item-inner">
+                          <div class="item-subtitle">Beatles</div>
+                          <div class="item-title">Were Vegetables Better Before?</div>
+                          <div class="item-subtitle bottom-subtitle"><i class="icon ion-md-time"></i>Last week</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="title-medium-container">
+                  <h2>Must See</h2>
+                </div>
+              </div>
+              <div id="discover-swiper3" class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" data-href="/single/">
+                      <div class="card medium">
+                        <img class="card-image" src="img/thumb-28.jpg" alt="">
+                        <div class="card-infos">
+                          <div class="card-date"><i class="icon ion-md-time"></i>2 days ago</div>
+                          <h2 class="card-title">Edmond at the Royal Palace Theatre</h2>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" data-href="/single/">
+                      <div class="card medium">
+                        <img class="card-image" src="img/thumb-42.jpg" alt="">
+                        <div class="card-infos">
+                          <div class="card-date"><i class="icon ion-md-time"></i>4 days ago</div>
+                          <h2 class="card-title">Booba on Fire in His New Gotham Clip</h2>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" data-href="/single/">
+                      <div class="card medium">
+                        <img class="card-image" src="img/thumb-29.jpg" alt="">
+                        <div class="card-infos">
+                          <div class="card-date"><i class="icon ion-md-time"></i>3 weeks ago</div>
+                          <h2 class="card-title">15 Cheap Outing Ideas in London</h2>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" data-href="/single/">
+                      <div class="card medium">
+                        <img class="card-image" src="img/thumb-30.jpg" alt="">
+                        <div class="card-infos">
+                          <div class="card-date"><i class="icon ion-md-time"></i>1 month ago</div>
+                          <h2 class="card-title">Ariana Grande Announces a New Fragrance</h2>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="block">
+                <div class="title-medium-container">
+                  <h2>Popular Last Week</h2>
+                </div>
+                <ul class="list media-list post-list">
+                  <li>
+                    <a href="/single/">
+                      <div class="item-content">
+                        <div class="item-media"><img src="img/thumb-31.jpg" alt=""></div>
+                        <div class="item-inner">
+                          <div class="item-subtitle">Fashion</div>
+                          <div class="item-title">The Crocodile, Man's Best Friend?</div>
+                          <div class="item-subtitle bottom-subtitle"><i class="icon ion-md-time"></i>4 hours ago</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/single/">
+                      <div class="item-content">
+                        <div class="item-media"><img src="img/thumb-32.jpg" alt=""></div>
+                        <div class="item-inner">
+                          <div class="item-subtitle">Science</div>
+                          <div class="item-title">7 Accessories to Pack This Summer</div>
+                          <div class="item-subtitle bottom-subtitle"><i class="icon ion-md-time"></i>6 days ago</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/single/">
+                      <div class="item-content">
+                        <div class="item-media"><img src="img/thumb-33.jpg" alt=""></div>
+                        <div class="item-inner">
+                          <div class="item-subtitle">Beatles</div>
+                          <div class="item-title">Mylene Farmer Will Unveil Her New Single on Friday</div>
+                          <div class="item-subtitle bottom-subtitle"><i class="icon ion-md-time"></i>Last week</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/single/">
+                      <div class="item-content">
+                        <div class="item-media"><img src="img/thumb-34.jpg" alt=""></div>
+                        <div class="item-inner">
+                          <div class="item-subtitle">Fashion</div>
+                          <div class="item-title">Holidays Abroad: Leave Reassured!</div>
+                          <div class="item-subtitle bottom-subtitle"><i class="icon ion-md-time"></i>Last month</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Search View -->
+        <div id="view-search" class="view tab">
+          <div data-name="search" class="page no-navbar">
+            <div class="page-content page-search">
+              <div class="searchbar-backdrop"></div>
+              <div class="block searchbar-container">
+                <div class="title-container">
+                  <h1>Buscar</h1>
+                </div>
+                <form class="searchbar">
+                  <div class="searchbar-inner">
+                    <div class="searchbar-input-wrap">
+                      <input type="search" placeholder="Buscar">
+                      <i class="searchbar-icon"></i>
+                      <span class="input-clear-button"></span>
+                    </div>
+                    <span class="searchbar-disable-button">Cancelar</span>
+                    <a id="boton" type="button" name="submit" onclick="cargar_datos()" class="col button button-small button-round button-fill">Buscar</a><br>
+
+                  </div>
+                </form>
+              </div>
+
+              <table id="PRO" class="display">
+                <br><br><br><br><br><br><br><br><br>
+              </table>
+              <div class="block search-container">
+                <div class="searchbar-hide-on-search">
+                  <h2>Palabras Clave</h2>
+                  <ul class="popular-tags">
+                    <li><a  class="text"><span>Ambiental</span><i class="icon ion-ios-arrow-forward"></i></a></li>
+                    <li><a  class="text"><span>Tecnologia</span><i class="icon ion-ios-arrow-forward"></i></a></li>
+                    <li><a  class="text"><span>Ciencia</span><i class="icon ion-ios-arrow-forward"></i></a></li>
+                    <li><a  class="text"><span>Animales</span><i class="icon ion-ios-arrow-forward"></i></a></li>
+                    <li><a  class="text"><span>Social</span><i class="icon ion-ios-arrow-forward"></i></a></li>
+                    <li><a  class="text"><span>Juegos</span><i class="icon ion-ios-arrow-forward"></i></a></li>
+                  </ul>
+                  <h2>Especialidades</h2>
+                  <div class="list no-hairlines trending-search">
+                    <ul>
+                      <li class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title"><a class="text">EMA</a></div>
+                        </div>
+                      </li>
+                      <li class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title"><a class="text">ECA</a></div>
+                        </div>
+                      </li>
+                      <li class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title"><a  class="text">INFO/REDES</a></div>
+                        </div>
+                      </li>
+                      <li class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title"><a  class="text">DISEÑO</a></div>
+                        </div>
+                      </li>
+                      <li class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title"><a  class="text">ARQUITECTONICO</a></div>
+                        </div>
+                      </li>
+                      <li class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title"><a  class="text">MECA</a></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pages View -->
+        <div id="view-pages" class="view tab">
+          <div data-name="pages" class="page">
+            <div class="navbar">
+              <div class="navbar-inner sliding">
+                <div class="title">Configuracion</div>
+              </div>
+            </div>
+            <!-- Scrollable page content -->
+            <div class="page-content">
+              <div class="block">
+                <h2>Modo Noche</h2>
+              </div>
+              <div class="list pages-list">
+                <ul>
+                  <li>
+                    <div class="item-link item-content item-button">
+                      <div class="item-media bg-color-black"><i class="icon ion-ios-moon text-color-orange"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">Modo Noche</div>
+                        <label class="toggle toggle-init color-green toggle-theme">
+                          <input type="checkbox">
+                          <span class="toggle-icon"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="block">
+                <h2>Opciones de colores</h2>
+              </div>
+              <div class="list pages-list">
+                <ul>
+                  <li>
+                    <div class="item-content item-themes">
+                      <label class="radio color-white"><input type="radio" name="radio-color-theme" id="color-theme-red"><i class="icon-radio bg-color-red"></i></label>
+                      <label class="radio color-white"><input type="radio" name="radio-color-theme" id="color-theme-green"><i class="icon-radio bg-color-green"></i></label>
+                      <label class="radio color-white"><input type="radio" name="radio-color-theme" id="color-theme-blue"><i class="icon-radio bg-color-blue"></i></label>
+                      <label class="radio color-white"><input type="radio" name="radio-color-theme" id="color-theme-pink" checked><i class="icon-radio bg-color-pink"></i></label>
+                      <label class="radio color-white"><input type="radio" name="radio-color-theme" id="color-theme-yellow"><i class="icon-radio bg-color-yellow"></i></label>
+                      <label class="radio color-white"><input type="radio" name="radio-color-theme" id="color-theme-orange"><i class="icon-radio bg-color-orange"></i></label>
+                      <label class="radio color-white"><input type="radio" name="radio-color-theme" id="color-theme-gray"><i class="icon-radio bg-color-gray"></i></label>
+                      <label class="radio color-black"><input type="radio" name="radio-color-theme" id="color-theme-white"><i class="icon-radio bg-color-white"></i></label>
+                      <label class="radio color-white"><input type="radio" name="radio-color-theme" id="color-theme-black"><i class="icon-radio bg-color-black"></i></label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="list pages-list">
+                <ul>
+                  <li>
+                    <div class="item-link item-content item-button">
+                      <div class="item-media bg-color-orange"><i class="icon ion-ios-share-alt"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">Contactanos</div>
+                        <a href="#" class="col button button-small button-round button-fill share-actions">Click</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Toolbar -->
+        <div class="toolbar tabbar tabbar-labels">
+          <div class="toolbar-inner">
+            <a href="#view-today" class="tab-link tab-link-active">
+              <i class="icon ion-ios-today"></i>
+              <span class="tabbar-label">Noticias</span>
+            </a>
+            <a href="#view-categories" class="tab-link">
+              <i class="icon ion-ios-apps"></i>
+              <span class="tabbar-label">Especialidades</span>
+            </a>
+            <a onclick="window.location.href='todas las imagenes del cole recortadas/mapas html de generales/mapa_general_colegio.html'" class="tab-link">
+              <i class="icon ion-ios-star"></i>
+              <span class="tabbar-label">Mapa</span>
+            </a>
+            <a href="#view-search" class="tab-link">
+              <i class="icon ion-ios-search"></i>
+              <span class="tabbar-label">Buscar</span>
+            </a>
+            <a href="#view-pages" class="tab-link">
+              <i class="icon ion-ios-albums"></i>
+              <span class="tabbar-label">Configuracion</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/framework7.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="DatosFront-end.js"></script>
+    <script type="text/javascript" src="datatables.min.js"></script>
+  </body>
+</html>

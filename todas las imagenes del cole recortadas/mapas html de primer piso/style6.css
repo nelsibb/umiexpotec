@@ -1,0 +1,19 @@
+canvas{
+  position: absolute;
+  top: -100px;
+}
+
+#imagen2{
+top: -100px;
+  z-index: 24;
+  position: absolute;
+width: 1400px;
+height: 2900px;
+}
+#imagen1{
+  margin-top: 950px;
+  transform: rotate(90deg);
+  height: 1000px;
+  position: absolute;
+  margin-left: -640px;
+}

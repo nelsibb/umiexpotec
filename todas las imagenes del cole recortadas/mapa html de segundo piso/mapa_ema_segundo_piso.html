@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+  <meta charset="utf-8" />
+  <script type="text/javascript">
+  function patata(rata) {
+    alert(rata);
+  }
+  </script>
+  <link href="style2.css" rel="stylesheet" type="text/css">
+</HEAD>
+<BODY onload="destino()">
+  <!--ETIQUETA DE MAPA -->
+  <map  name="numero1">
+    <area shape="rect" coords="680,830,845,930" onclick="patata(1)" >
+    <area shape="rect" coords="920,830,1075,930" onclick="patata(2)" >
+    <area shape="rect" coords="455,830,610,930" onclick="patata(3)" >
+    <area shape="rect" coords="345,1000,450,1160" onclick="patata(4)" >
+    <area shape="rect" coords="345,1225,450,1390" onclick="patata(5)" >
+    <area shape="rect" coords="345,1475,450,1635" onclick="patata(6)" >
+    <area shape="rect" coords="345,1700,450,1860" onclick="patata(7)" >
+    <area shape="rect" coords="505,1875,660,1980" onclick="patata(8)" >
+    <area shape="rect" coords="710,1875,865,1980" onclick="patata(9)" >
+    <area shape="rect" coords="1010,1765,1115,1930" onclick="patata(10)" >
+    <area shape="rect" coords="1010,1557,1115,1715" onclick="patata(11)" >
+    <area shape="rect" coords="1220,1280,1325,1440" onclick="patata(12)" >
+    <area shape="rect" coords="1220,1050,1325,1205" onclick="patata(13)" >
+    <area shape="rect" coords="705,1250,868,1351" onclick="patata(14)" >
+    <area shape="rect" coords="705,1405,868,1510" onclick="patata(15)" >
+
+
+
+  </map >
+
+  <!--ETIQUETA DE MAPA DE DIJKSTRA E IMAGEN TRASPARENTE -->
+  <div id= "map">
+      <img id="imagen1" src="Segundo Piso de Electromecanica.png">
+      <canvas id='myCanvas' height="2500px" width="1500"></canvas>
+    </div>
+  <img id="imagen2" src="imagen_transparente.png" usemap="#numero1">
+
+  <button type="submit" onclick="window.location.href='../mapas html de generales/mapa_general_colegio.html'" class="boton_para_volver_al_index">Mapa General</button>
+
+
+  <!--EL PRIMER POPUP-->
+
+  <div class="popup-overlay">
+    <!--Creates the popup content-->
+     <div class="popup-content">
+        <h2>Punto Final</h2>
+        <select id="inicio" class="inicio">
+          <option value="0">Escaleras</option>
+          <option value="1">Entrada EMA</option>
+          <option value="2">Artemis</option>
+          <option value="3">Hadiba EP</option>
+          <option value="4">D.A.L</option>
+          <option value="4">Sestus</option>
+
+          <option value="5">Earth Machine</option>
+          <option value="6">ECO-Desk</option>
+
+          <option value="7">Cleaning System for Air Filters</option>
+
+          <option value="8">E.M.A</option>
+          <option value="9">Safe Seat</option>
+
+
+          <option value="12">ACC</option>
+
+          <option value="14">Ropero Inteligente</option>
+          <option value="15">S.T.P HAMMER </option>
+
+          <option value="17">18</option>
+          <option value="18">Archivador Automatico</option>
+          <option value="19">ADF</option>
+          <option value="20">Walk-T</option>
+
+
+        </select>
+        <br>
+        <br>
+             <!--popup's close button-->
+
+       <h2>Punto Inicial</h2>
+       <select id="final" class="final">
+         <option value="0">Escaleras</option>
+         <option value="1">Entrada EMA</option>
+         <option value="2">Artemis</option>
+         <option value="3">Hadiba EP</option>
+         <option value="4">D.A.L</option>
+         <option value="4">Sestus</option>
+
+         <option value="5">Earth Machine</option>
+         <option value="6">ECO-Desk</option>
+
+         <option value="7">Cleaning System for Air Filters</option>
+
+         <option value="8">E.M.A</option>
+         <option value="9">Safe Seat</option>
+
+
+         <option value="12">ACC</option>
+
+         <option value="14">Ropero Inteligente</option>
+         <option value="15">S.T.P HAMMER </option>
+
+
+         <option value="18">Archivador Automatico</option>
+         <option value="19">ADF</option>
+         <option value="20">Walk-T</option>
+       </select>
+       <br>
+       <br>
+       <!--popup's close button-->
+        <button class="close">Close</button>
+      </div>
+  </div>
+
+  <!--EL TERCER POPUP-->
+
+
+  <!--Content shown when popup is not displayed-->
+
+  <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script  src="./funcion_popup.js"></script>
+
+
+
+
+  <ul id="menu">
+    <a class="menu-button icon-plus" href="#menu" title="Show navigation"><span class="fas fa-share-alt"></span></a>
+    <a class="menu-button icon-minus" href="#0" title="Hide navigation"><span class="fas fa-share-alt"></span></a>
+    <li class="menu-item">
+        <a href="#menu">
+
+              <i onclick="popupprimero()"  class="fas fa-map-marker-alt" style="font-size: 37px;"></i>
+        </a>
+
+    </li>
+    <li class="menu-item">
+        <a href="#menu">
+          <i class="far fa-caret-square-down" onclick="window.location.href='../mapas html de primer piso/mapa_ema_primer_piso.html'"  style="font-size: 37px;"></i>
+        </a>
+    </li>
+    <li class="menu-item">
+        <a href="#menu">
+          <i  onclick="destino()" class="far fa-check-circle"  style="font-size: 37px;" ></i>
+        </a>
+    </li>
+  </ul>
+  <!--ETIQUETA DE LINKS -->
+    </select>
+    <link rel="stylesheet" href="./style_popup.css">
+  <script  src="./funcion_popup.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<!--ETIQUETA DE LINKS -->
+  </select>
+    <script src="mapa_segundo_piso_ema/Grafo.js"></script>
+    <script src="mapa_segundo_piso_ema/Dijkstra.js"></script>
+    <script src="mapa_segundo_piso_ema/Visual.js"></script>
+</BODY>
+</HTML>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+  <meta charset="utf-8" />
+  <script type="text/javascript">
+  function patata(rata) {
+    Swal.fire({
+      title: 'Sweet!',
+      text: rata,
+      imageUrl: 'https://unsplash.it/400/200',
+      imageWidth: 400,
+      imageHeight: 200,
+      imageAlt: 'Custom image',
+      animation: false,
+      customClass: {
+        container: 'container-class',
+        popup: 'popup-class',
+        header: 'header-class',
+        title: 'title-class',
+        closeButton: 'close-button-class',
+        icon: 'icon-class',
+        image: 'image-class',
+        content: 'content-class',
+        input: 'input-class',
+        actions: 'actions-class',
+        confirmButton: 'confirm-button-class',
+        cancelButton: 'cancel-button-class',
+        footer: 'footer-class'
+      }
+    });
+  }
+  </script>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</HEAD>
+<BODY onload="destino()">
+  <!--ETIQUETA DE MAPA -->
+  <map  name="numero1">
+    <area shape="rect" coords="310,835,470,1135" onclick="patata(1)" >
+    <area shape="rect" coords="310,1135,470,1400" onclick="patata(2)" >
+    <area shape="rect" coords="310,1400,470,1525" onclick="patata(3)" >
+    <area shape="rect" coords="310,1525,470,1650" onclick="patata(4)" >
+    <area shape="rect" coords="310,1650,540,1870" onclick="patata(5)" >
+    <area shape="rect" coords="310,1870,465,2015" onclick="patata(6)" >
+    <area shape="rect" coords="310,2015,465,2145" onclick="patata(7)" >
+    <area shape="rect" coords="310,2145,465,2285" onclick="patata(8)" >
+    <area shape="rect" coords="620,890,875,1140" onclick="patata(9)" >
+    <area shape="rect" coords="540,1725,710,1870" onclick="patata(10)" >
+    <area shape="rect" coords="710,1725,875,1870" onclick="patata(11)" >
+    <area shape="rect" coords="710,2180,875,2330" onclick="patata(12)" >
+    <area shape="rect" coords="1110,970,1390,1135" onclick="patata(13)" >
+    <area shape="rect" coords="1110,1455,1370,1585" onclick="patata(14)" >
+    <area shape="rect" coords="1110,1590,1370,1755" onclick="patata(15)" >
+    <area shape="rect" coords="1220,1755,1370,1980" onclick="patata(16)" >
+    <area shape="rect" coords="1220,1980,1370,2190" onclick="patata(17)" >
+    <area shape="rect" coords="1110,2190,1370,2330" onclick="patata(18)" >
+
+  </map >
+
+  <!--ETIQUETA DE MAPA DE DIJKSTRA E IMAGEN TRASPARENTE -->
+  <div id= "map">
+      <img id="imagen1" src="Segundo Piso de tics.png">
+      <canvas id='myCanvas' height="2400px" width="1600"></canvas>
+    </div>
+  <img id="imagen2" src="imagen_transparente.png" usemap="#numero1">
+
+  <button type="submit" onclick="window.location.href='../mapas html de generales/mapa_general_colegio.html'" class="boton_para_volver_al_index">Mapa General</button>
+
+
+
+
+  <!--EL PRIMER POPUP-->
+
+  <div class="popup-overlay">
+    <!--Creates the popup content-->
+     <div class="popup-content">
+        <h2>Punto Final</h2>
+        <select id="inicio" class="inicio">
+          <option value="0">Escaleras</option>
+
+
+          <option value="3">CEDES Radio</option>
+
+
+
+
+
+          <option value="9">Jueces</option>
+          <option value="10">Lucian</option>
+          <option value="11">Wonder</option>
+          <option value="11">Galton</option>
+          <option value="11">Locket</option>
+
+          <option value="12">Jay</option>
+          <option value="12">Saybe</option>
+          <option value="12">Tummy</option>
+          <option value="12">Kardia</option>
+          <option value="12">Benners</option>
+
+          <option value="13">Vernun</option>
+          <option value="13">Hugo</option>
+          <option value="13">Hilaria</option>
+          <option value="13">Saturnus</option>
+
+          <option value="14">GEA</option>
+          <option value="14">SKEM</option>
+          <option value="14">Lado Sibu</option>
+          <option value="14">Sobek</option>
+
+          <option value="15">UMi</option>
+
+
+        </select>
+        <br>
+        <br>
+             <!--popup's close button-->
+
+       <h2>Punto Inicial</h2>
+       <select id="final" class="final">
+         <option value="0">Escaleras</option>
+
+
+         <option value="3">CEDES Radio</option>
+
+
+
+
+
+         <option value="9">Jueces</option>
+         <option value="10">Lucian</option>
+         <option value="11">Wonder</option>
+         <option value="11">Galton</option>
+         <option value="11">Locket</option>
+
+         <option value="12">Jay</option>
+         <option value="12">Saybe</option>
+         <option value="12">Tummy</option>
+         <option value="12">Kardia</option>
+         <option value="12">Benners</option>
+
+         <option value="13">Vernun</option>
+         <option value="13">Hugo</option>
+         <option value="13">Hilaria</option>
+         <option value="13">Saturnus</option>
+
+         <option value="14">GEA</option>
+         <option value="14">SKEM</option>
+         <option value="14">Lado Sibu</option>
+         <option value="14">Sobek</option>
+
+         <option value="15">UMi</option>
+       </select>
+       <br>
+       <br>
+       <!--popup's close button-->
+        <button class="close">Close</button>
+      </div>
+  </div>
+
+  <!--EL TERCER POPUP-->
+
+
+  <!--Content shown when popup is not displayed-->
+
+  <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script  src="./funcion_popup.js"></script>
+
+
+
+
+  <ul id="menu">
+    <a class="menu-button icon-plus" href="#menu" title="Show navigation"><span class="fas fa-share-alt"></span></a>
+    <a class="menu-button icon-minus" href="#0" title="Hide navigation"><span class="fas fa-share-alt"></span></a>
+    <li class="menu-item">
+        <a href="#menu">
+
+              <i onclick="popupprimero()"  class="fas fa-map-marker-alt" style="font-size: 37px;"></i>
+        </a>
+
+    </li>
+    <li class="menu-item">
+        <a href="#menu">
+          <i class="far fa-caret-square-down" onclick="window.location.href='../mapas html de primer piso/mapa_tics_primer_piso.html'"  style="font-size: 37px;"></i>
+        </a>
+    </li>
+    <li class="menu-item">
+        <a href="#menu">
+          <i  onclick="destino()" class="far fa-check-circle"  style="font-size: 37px;"></i>
+        </a>
+    </li>
+  </ul>
+  <!--ETIQUETA DE LINKS -->
+    </select>
+    <link rel="stylesheet" href="./style_popup.css">
+  <script  src="./funcion_popup.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<!--ETIQUETA DE LINKS -->
+  </select>
+    <script src="mapa_segundo_piso_tics/Grafo.js"></script>
+    <script src="mapa_segundo_piso_tics/Dijkstra.js"></script>
+    <script src="mapa_segundo_piso_tics/Visual.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+</BODY>
+</HTML>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="estilo-agregar.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="datatables.min.css"/>
+  <title>Nuevo proyecto</title>
+  <meta charset="utf-8">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">UMi</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menú
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="registro.html" class="nav-link">Iniciar sesión</a></li>
+          <li class="nav-item"><a href="ingresar.html" class="nav-link">Registrarse</a></li>
+          <li class="nav-item"><a href="Nueva_proyecto.html" class="nav-link">Agregar proyecto</a></li>
+          <li><a href="todas las imagenes del cole recortadas\mapas html de generales\mapa_general_colegio.html.html">Mapa</a></li>
+            </ul>
+            </div>
+
+
+
+    </div>
+  </nav>
+<br><br><br>
+    <section class="Cuerpo">
+        <div class="Cabecera">
+            <h1 class="Titulo"> Agregar un proyecto </h1>
+        </div>
+        <div class="Datos">
+            <table>
+                <tr>
+                    <td>
+                        <div class="Dato">
+                            <span> Logo </span><br><input class="text" type="file" id="imglogo">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="Dato">
+                            <span> Nombre: </span><br><input class="text" type="text" id="nombre">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="Dato">
+                            <span> Integrante 1 </span><br><input class="text" type="text" id="inte1">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="Dato">
+                            <span> Integrante 2 </span><br><input class="text" type="text" id="inte2">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="Dato">
+                            <span> Integrante 3 </span><br><input class="text" type="text" id="inte3">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="Dato">
+                            <span> Especialidad </span><br><input class="text" type="text" id="especialidad">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="Dato">
+                            <span> Seccion </span><br><input class="text" type="text" id="seccion">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="Dato">
+                            <span> Aula ubicacion </span><br><input class="text" type="text" id="aulaubi">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="Dato">
+                            <span> Descripcion </span><br><input class="text" type="text" id="descripcion">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="Dato">
+                            <span> Palabrasclave </span><br><input class="text" type="text" id="palabrasclave">
+                        </div>
+                    </td>
+                    <td class="caja">
+                        <button class="But" id="boton" onclick="botonguardarclick()"> Agregar </button>
+                    </td>
+                </tr>
+                <tr>
+                <td>
+                        <div class="Dato">
+                            <span> Buscar </span><br><input class="text" type="text" id="buscador">
+                        </div>
+                    </td>
+                    <td class="caja">
+                        <button class="But" id="boton" onclick="cargar_datos()"> Buscar </button>
+                    </td>
+                </tr>
+                <div id="datosmostrados">
+
+                </div>
+                <table id="PERRAS" class="display">
+                </table>
+
+            </table>
+        </div>
+        <div class="Bottom">
+        </div>
+    </section>
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="DatosFront-end.js"></script>
+    <script type="text/javascript" src="datatables.min.js"></script>
+    <script type="text/javascript">
+              function revisar() {
+
+            if(localStorage.getItem("Usuariolog")==null) {
+
+                alert("No haz iniciado sesion");
+                location.href = 'ingresar.html';
+
+            }
+        }
+    </script>
+</body>
+</html>
