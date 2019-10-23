@@ -3,7 +3,7 @@ var app = express();
 var mongoose = require('mongoose');
 var port = process.env.PORT || 8080;
 
-mongoose.connect('mongodb://localhost:27017/expo'); //Conexion a la base de datos de mongo
+mongoose.connect('mongodb://bb-sita:pass123@ds341825.mlab.com:41825/cedesprueba'); //Conexion a la base de datos de mongo
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console,'MongoDB connection error:'));
