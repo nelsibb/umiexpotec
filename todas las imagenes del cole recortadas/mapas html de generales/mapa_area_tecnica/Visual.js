@@ -137,45 +137,17 @@ function criarPonto(x, y) {
 var g = new Grafo();
 var arrPontos = [
 
-      criarPonto(535, 350), //0
-      criarPonto(549, 460), //1
-      criarPonto(585, 700), //2
-      criarPonto(870, 640), //3
-      criarPonto(845, 500), //4
-      criarPonto(1100, 450), //5
-      criarPonto(650, 440), //6
-      criarPonto(882, 710), //7
-      criarPonto(1500, 585), //8
-      criarPonto(960, 1140), //9
-      criarPonto(990, 1285), //10
-      criarPonto(870, 1160), //11
-      criarPonto(1180, 1245), //12
-      criarPonto(1580, 1165), //13
-      criarPonto(1672, 1245), //14
-      criarPonto(1687, 1540), //15
-      criarPonto(1460, 1540), //16
-      criarPonto(1260, 1540), //17
-      criarPonto(1140, 1540), //18
-      criarPonto(1170, 1320), //19
-      criarPonto(1140, 1605), //20
-      criarPonto(1060, 1637), //21
-      criarPonto(955, 1800), //22
-      criarPonto(945, 1905), //23
-      criarPonto(845, 2105), //24
-      criarPonto(785, 2175), //25
-      criarPonto(645, 2100), //26
-      criarPonto(625, 2040), //27
-      criarPonto(665, 1960), //27
-      criarPonto(665, 1960), //28
-      criarPonto(565, 1840), //30
-      criarPonto(920, 2265), //31
-      criarPonto(1060, 2345), //32
-      criarPonto(1080, 2305), //33
-      criarPonto(1040, 2380), //34
-      criarPonto(903, 2300), //35
-      criarPonto(935, 2230), //36
-      criarPonto(775, 2200), //37
-      criarPonto(620, 2150), //38
+      criarPonto(1555, 1750), //0
+      criarPonto(1620, 1080), //1
+      criarPonto(1680, 355), //2
+      criarPonto(1500, 2450), //3
+      criarPonto(1660, 1750), //4
+      criarPonto(1600, 2450), //5
+      criarPonto(1800, 1070), //6
+      criarPonto(1400, 1080), //7
+      criarPonto(1400, 375), //8
+      criarPonto(1800, 375), //9
+
 
 
 ];
@@ -183,44 +155,14 @@ var arrPontos = [
 //Aristas de la fila 1
 g.criarConexao(arrPontos[0], arrPontos[1], parseInt(1));
 g.criarConexao(arrPontos[2], arrPontos[1], parseInt(1));
-g.criarConexao(arrPontos[2], arrPontos[3], parseInt(1));
-g.criarConexao(arrPontos[4], arrPontos[3], parseInt(1));
-g.criarConexao(arrPontos[4], arrPontos[5], parseInt(1));
+g.criarConexao(arrPontos[3], arrPontos[0], parseInt(1));
+g.criarConexao(arrPontos[0], arrPontos[4], parseInt(1));
+g.criarConexao(arrPontos[5], arrPontos[3], parseInt(1));
 g.criarConexao(arrPontos[1], arrPontos[6], parseInt(1));
-g.criarConexao(arrPontos[3], arrPontos[7], parseInt(1));
-g.criarConexao(arrPontos[8], arrPontos[7], parseInt(1));
-g.criarConexao(arrPontos[9], arrPontos[7], parseInt(1));
-g.criarConexao(arrPontos[9], arrPontos[10], parseInt(1));
-g.criarConexao(arrPontos[9], arrPontos[11], parseInt(1));
-g.criarConexao(arrPontos[10], arrPontos[12], parseInt(1));
-g.criarConexao(arrPontos[13], arrPontos[12], parseInt(1));
-g.criarConexao(arrPontos[13], arrPontos[14], parseInt(1));
-g.criarConexao(arrPontos[15], arrPontos[14], parseInt(1));
-g.criarConexao(arrPontos[15], arrPontos[16], parseInt(1));
-g.criarConexao(arrPontos[15], arrPontos[16], parseInt(1));
-g.criarConexao(arrPontos[17], arrPontos[16], parseInt(1));
-g.criarConexao(arrPontos[17], arrPontos[18], parseInt(1));
-g.criarConexao(arrPontos[12], arrPontos[19], parseInt(1));
-g.criarConexao(arrPontos[18], arrPontos[19], parseInt(1));
-g.criarConexao(arrPontos[20], arrPontos[18], parseInt(1));
-g.criarConexao(arrPontos[20], arrPontos[21], parseInt(1));
-g.criarConexao(arrPontos[22], arrPontos[21], parseInt(1));
-g.criarConexao(arrPontos[22], arrPontos[23], parseInt(1));
-g.criarConexao(arrPontos[24], arrPontos[23], parseInt(1));
-g.criarConexao(arrPontos[24], arrPontos[25], parseInt(1));
-g.criarConexao(arrPontos[26], arrPontos[25], parseInt(1));
-g.criarConexao(arrPontos[26], arrPontos[27], parseInt(1));
-g.criarConexao(arrPontos[28], arrPontos[27], parseInt(1));
-g.criarConexao(arrPontos[28], arrPontos[29], parseInt(1));
-g.criarConexao(arrPontos[28], arrPontos[30], parseInt(1));
-g.criarConexao(arrPontos[31], arrPontos[25], parseInt(1));
-g.criarConexao(arrPontos[31], arrPontos[32], parseInt(1));
-g.criarConexao(arrPontos[33], arrPontos[32], parseInt(1));
-g.criarConexao(arrPontos[32], arrPontos[34], parseInt(1));
-g.criarConexao(arrPontos[31], arrPontos[35], parseInt(1));
-g.criarConexao(arrPontos[31], arrPontos[36], parseInt(1));
-g.criarConexao(arrPontos[25], arrPontos[37], parseInt(1));
-g.criarConexao(arrPontos[26], arrPontos[38], parseInt(1));
+g.criarConexao(arrPontos[1], arrPontos[7], parseInt(1));
+g.criarConexao(arrPontos[2], arrPontos[8], parseInt(1));
+g.criarConexao(arrPontos[2], arrPontos[9], parseInt(1));
+
 
 //ver el punto final e incial
 function destino() {
