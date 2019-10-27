@@ -239,20 +239,20 @@ $$('.ptr-content').on('ptr:refresh', function (e) {
   setTimeout(function () {
     var html =
     '<div class="title-container">'+
-      '<span class="title-date">Tuesday 19 March</span>'+
-      '<h1>Just Now</h1>'+
+      '<span class="title-date">Domingo 27 de Octubre</span>'+
+      '<h1>Ahora Mismo</h1>'+
     '</div>'+
     '<a href="/single/">'+
       '<div class="card">'+
         '<img class="card-image" src="img/thumb-14.jpg" alt="">'+
         '<div class="card-infos">'+
-          '<h2 class="card-title">How to Get Your First Tattoo Right</h2>'+
+          '<h2 class="card-title">Niños de pasitos reciben curso basico de arduino</h2>'+
           '<div class="card-bottom">'+
             '<div class="card-author">'+
               '<img class="card-author-image" src="img/authors/author-1.jpg" alt="">'+
-              '<div>Camille Aline</div>'+
+
             '</div>'+
-            '<div class="card-comments"><i class="icon ion-ios-text"></i>3</div>'+
+
           '</div>'+
         '</div>'+
       '</div>'+
@@ -288,9 +288,9 @@ $$('.infinite-scroll-content').on('infinite', function () {
         '<div class="item-content">'+
           '<div class="item-media"><img src="img/thumb-15.jpg" width="44"/></div>'+
           '<div class="item-inner">'+
-            '<div class="item-subtitle">Fashion</div>'+
-            '<div class="item-title">Archery at the 2024 Olympic Games</div>'+
-            '<div class="item-subtitle bottom-subtitle"><img src="img/authors/author-3.jpg">Jess Roxana</div>'+
+            '<div class="item-subtitle">Musica</div>'+
+            '<div class="item-title">Banda Agora recibe premio y pasa de ronda en el FEA</div>'+
+            '<div class="item-subtitle bottom-subtitle"><img src="img/authors/author-3.jpg">Cedes Don Bosco</div>'+
           '</div>'+
         '</div>'+
       '</a>'+
@@ -300,9 +300,9 @@ $$('.infinite-scroll-content').on('infinite', function () {
         '<div class="item-content">'+
           '<div class="item-media"><img src="img/thumb-16.jpg" width="44"/></div>'+
           '<div class="item-inner">'+
-            '<div class="item-subtitle">Fashion</div>'+
-            '<div class="item-title">Most Beautiful Beach of the Costa Brava</div>'+
-            '<div class="item-subtitle bottom-subtitle"><img src="img/authors/author-2.jpg">Zorka Ivka</div>'+
+            '<div class="item-subtitle">Musica</div>'+
+            '<div class="item-title">Bandas estudiantiles se dan a conocer</div>'+
+            '<div class="item-subtitle bottom-subtitle"><img src="img/authors/author-2.jpg">Cedes Don Bosco</div>'+
           '</div>'+
         '</div>'+
       '</a>'+
